@@ -12,8 +12,9 @@ class lueders {
     ensure  => directory,
     owner   => "$user",
     group   => "$user",
-    source  => "puppet:///modules/${module_name}/scripts",
+    mode    => 755,
     recurse => true,
+    source  => "puppet:///modules/${module_name}/scripts",
   }  
 
 }
