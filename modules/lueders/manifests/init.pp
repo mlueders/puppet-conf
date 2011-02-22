@@ -4,7 +4,7 @@ class lueders {
   $user="mike"
   $homedir="/home/$user"
 
-  package { "tree":
+  package { ["tree", "emacs23"]:
     ensure => present
   }
 
